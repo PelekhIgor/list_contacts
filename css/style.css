@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    max-width: 1300px;
+    margin: auto;
+}
+.create{
+    padding-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+input{
+    width: 150px;
+    height: 35px;
+    border: 1px solid darkgrey;
+    border-radius: 2px;
+    font-size: 20px;
+    color: black;
+    margin-right: 15px;
+    padding: 0 5px;
+
+}
+input::placeholder{
+    font-size: 15px;
+    color: lightgrey;
+
+}
+.create_btn{
+    background-color: darkgray;
+    color: white;
+    padding: 5px 20px ;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+.create_btn:hover{
+    background-color: lightgray;
+}
+.main_container{
+    width: 100%;
+    display: flex;
+}
+.contact_container{
+    width: 50%;
+    min-width: 250px;
+    max-width: 590px;
+    height: 500px;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    border: 2px solid darkgray;
+}
+
+.item{
+    width: 250px;
+    height: 80px;
+    display: flex;
+    border: 2px solid darkgray;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: lightyellow;
+}
+.item_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.item_action{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.close {
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0, 0, 1, -0.92);
+}
+.close:hover{
+    transform: translatey(-20%) scale(1.5);
+}
+
+.edit_btn{
+    display: block;
+    background-color: darkgray;
+    color: white;
+    padding: 5px 15px ;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.edit_btn:hover{
+    background-color: lightgray;
+}
+.edit-container{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 200px;
+}
+h1{
+    text-align: center;
+}
+.edit_cont{
+    flex-direction: column;
+
+}
+.edit_cont input{
+    margin-bottom: 15px;
+}
+.save_btn{
+    background-color: darkgray;
+    color: white;
+    padding: 10px 20px ;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.save_btn:hover{
+    background-color: lightgray;
+}
+
+
+.item-active{
+    border: 2px solid orange;
+}
+.show-edit{
+    display: flex;
+}
+
